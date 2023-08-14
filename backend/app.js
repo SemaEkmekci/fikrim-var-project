@@ -38,8 +38,8 @@ const sendMail = async (to, subject, text) => {
     port: 587,
     secureConnection: false,
     auth: {
-      user: "deneme12309@outlook.com.tr",
-      pass: "abcd.15987",
+      user: "example@outlook.com.tr",
+      pass: "123456",
     },
     tls: {
       ciphers: "SSLv3",
@@ -47,7 +47,7 @@ const sendMail = async (to, subject, text) => {
   });
 
   const mailOptions = {
-    from: "deneme12309@outlook.com.tr",
+    from: "example@outlook.com.tr",
     to: to,
     subject: subject,
     text: text,
