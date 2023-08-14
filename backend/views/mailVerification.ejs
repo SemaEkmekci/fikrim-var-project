@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= "/public/static/styles.css" rel="stylesheet" type="text/css" />
+    <title>Mail Doğrula</title>
+</head>
+<body>
+  <section class="home">
+    <div class="form_container">
+      <div class="form signup_form"> 
+          <h4> <%= email%> <br/> <br/>Mailiniz doğrulandı. <br/> Giriş Yapabilirsiniz.</h4>
+          <button  onclick="goToPage()" class="button" >Giriş Yap</button>    
+      </div>
+    </div>
+  </section>
+  <script>
+    function goToPage() {
+      window.location.href = "http://localhost:3000/userHomePage";
+    }
+  </script>
+</body>
+</html>

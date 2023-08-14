@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet"  type="text/css" href="./index.css"> -->
+    <link href= "/public/static/styles.css" rel="stylesheet" type="text/css" />
+    <title>Parola Sıfırla</title>
+    <script>
+      var status = '<%- JSON.stringify(status)%>';
+      if(JSON.parse(status) == "Verified"){
+          window.location.href = "http://localhost:3000/login";
+      }
+    </script>
+</head>
+<body>
+  <section class="home">
+    <div class="form_container">
+      <div class="form signup_form">
+        <form action="" method="post" onsubmit="return validatePasswords()">
+          <!-- <h1> <%= email%></h1> -->
+          <h2>Yeni Şifre Oluştur</h2>
+          <div class="input_box">
+            <input type="password" placeholder="Şifre" id="password" name='password' required />
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Şifre Tekrar" id="confirmPassword" name='confirmPassword' required />
+          </div>
+          <button type='submit' class="button" value="submit" >Yeni Şifre Oluştur</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+    function validatePasswords() {
+      var password = document.getElementById("password").value;
+      var confirmPassword = document.getElementById("confirmPassword").value;
+    
+      if (password !== confirmPassword) {
+        alert("Şifreler eşleşmiyor, lütfen tekrar deneyin!");
+        return false;
+      } else {
+        alert("Şifre Güncelleme Başarılı");
+        return true;
+      }
+    }
+  </script>
+</body>
+</html>
