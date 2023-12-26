@@ -1,4 +1,5 @@
-![image](https://github.com/SemaEkmekci/fikrim-var-project/assets/94064744/672a3205-75d8-4944-ad25-a0f8a5614ff6)# Fikrim Var
+# Fikrim Var
+
 Kapsül Teknoloji Platformu için geliştirdiğim "Fikrim Var" projesi, platform kullanıcılarına proje fikirlerini ilgili birim sorumlusuna
 ileterek tanıtma fırsatı sunuyor. Bu sayede kullanıcılar, birim sorumlularından gelen geri bildirimleri değerlendirebilirler Ayrıca,
 projelerini daha ayrıntılı şekilde tartışmak isteyen kullanıcılar, istedikleri takdirde birim sorumlularıyla randevu oluşturabilirler.
